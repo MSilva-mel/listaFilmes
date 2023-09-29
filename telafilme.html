@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Lista de Filmes</title>
+    <script src="jsfilme.js"></script>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#movie-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#listafilme {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.movie-item button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.center {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <h1>Minha Lista de Filmes</h1>
+
+    <div id="movie-form">
+        <h2>Adicionar Filme</h2>
+        <form id="addfilme">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo">
+            <br>
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero">
+            <br>
+            <label for="av">Avaliação:</label>
+            <input type="number" id="av" min="1" max="10">
+            <br>
+            <button type="submit">Adicionar Filme</button>
+        </form>
+    </div>
+
+    <h2>Lista de Filmes</h2>
+    <ul id="listafilme"></ul>
+
+
+</body>
+</html>
